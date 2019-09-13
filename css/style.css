@@ -1,0 +1,430 @@
+@import "reset.css";
+
+/* Header color : #385898 */
+html {
+  font-family: sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #2196f3;
+  transition: all 0.2s ease-in-out;
+}
+a:hover {
+  color: red;
+}
+/* Header Styling */
+header {
+  background: #385898;
+  max-width: 100%;
+  padding: 20px;
+}
+header .logo-area {
+  display: inline-block;
+  width: 20%;
+  color: white;
+  font-size: 20px;
+}
+header .profile-info {
+  display: inline-block;
+  width: 20%;
+  margin-left: -142px;
+}
+header .profile-info ul li {
+  display: inline-block;
+  padding-right: 25px;
+}
+header .profile-info ul li:nth-child(2) {
+  border-right: 1px solid rgba(255, 255, 255, 0.247);
+  padding-right: 98px;
+}
+header .profile-info ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+header .icon-links {
+  display: inline-block;
+  width: 20%;
+  margin-left: -79px;
+}
+header .icon-links a {
+  display: inline-block;
+  color: white;
+  padding-left: 0.5rem;
+}
+header .icon-links a:nth-child(3) {
+  border-right: 1px solid rgba(255, 255, 255, 0.247);
+  padding-right: 98px;
+}
+/* Lock + Search Bar Styling */
+header .lock {
+  display: inline-block;
+  width: 20%;
+}
+header .lock a {
+  color: white;
+}
+/* Search Area */
+header .search-area {
+  display: inline-block;
+  float: right;
+}
+header .search-area a {
+  display: inline-block;
+  color: white;
+}
+header .search-area form {
+  display: inline-block;
+  position: relative;
+  top: -7px;
+}
+header .search-area input {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  border: none;
+  outline: none;
+  height: 30px;
+  transition: height 1s;
+  -webkit-transition: height 1s;
+  border-bottom: solid white 1px;
+}
+header .search-area input::placeholder {
+  color: white;
+  position: relative;
+  top: 5px;
+}
+/* Content top */
+
+#top-area {
+  padding: 200px 15px 90px 15px;
+  /* background: url("https://ib3.hulu.com/user/v3/artwork/15917662-915a-4188-b560-a073406445e5?base_image_bucket_name=hummus&base_image=50b1e217-7514-43de-91a1-fd036ddbd1b2&size=600x338&format=jpeg") */
+  background: url("https://otakuorbit.files.wordpress.com/2019/04/kimetsu-no-yaiba-01-large-16.jpg")
+    no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#top-area .profile-info .user-img {
+  display: inline-block;
+  padding: 10px;
+  
+}
+#top-area .profile-info .user-img img {
+  border-radius: 50%;
+}
+#top-area .profile-info .user-details {
+  display: inline-block;
+  vertical-align: top; /* here */
+  padding-left: 20px;
+}
+#top-area .profile-info .user-details h3 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 300;
+  margin-top: 35px;
+  margin-bottom: 10px;
+}
+#top-area .profile-info .user-details a {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.3);
+  margin-left: -4px;
+  margin-right: 5%;
+  width: 45%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 10px;
+  padding: 10px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  transition: background 0.4s ease-in-out;
+}
+#top-area .profile-info .user-details a:hover {
+  background: #2196f3;
+}
+/* Content Area | Left Side start */
+
+#content-area {
+  background: #fafafa;
+  overflow: auto;
+  padding: 50px 0;
+}
+#content-area .side-column {
+  width: 35%;
+  margin: 0 2.5%;
+  height: 600px;
+  float: left;
+  max-width: 380px;
+}
+#content-area .widget-box {
+  padding: 15px;
+  background: #fff;
+  margin: 0 0 15px 0;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 7px 5px 1px rgba(209, 186, 209, 1);
+  -moz-box-shadow: 0px 7px 5px 1px rgba(209, 186, 209, 1);
+  box-shadow: 0px 7px 5px 1px rgba(209, 186, 209, 1);
+  overflow: auto;
+}
+#content-area .widget-box .head {
+}
+#content-area .widget-box .head .widget-icon-container {
+  display: inline-block;
+}
+#content-area .widget-box .head .widget-icon {
+  background: #bfbfbf;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#content-area .widget-box .head .widget-icon .fas {
+  font-size: 20px;
+  max-width: 50%;
+}
+#content-area .widget-box .head .widget-title {
+  display: inline-block;
+  padding: 0 0 0 10px;
+}
+#content-area .widget-box .body {
+  padding: 15px 0;
+}
+
+/* Main-Area | Right Column */
+#content-area .main-area {
+  width: 55%;
+  margin: 0 2.5%;
+  height: 600px;
+  float: left;
+}
+#content-area .main-area .widget-box.sub-menu {
+  padding: 0;
+  margin: 0;
+  margin: 0 0 20px 0;
+}
+#content-area .main-area .sub-menu ul {
+  padding: 0;
+}
+#content-area .main-area .sub-menu ul li {
+  display: inline-block;
+  width: 20%;
+  float: left;
+  text-align: center;
+  border-bottom: 3px solid #fff;
+  transition: all 0.4 ease-in-out;
+  cursor: pointer;
+  padding: 10px;
+}
+#content-area .main-area .sub-menu ul li:hover {
+  border-bottom: 3px solid #2196f3;
+  color: #2196f3;
+}
+#content-area .main-area .sub-menu ul li:nth-child(5) {
+  padding: 28px 0 28px;
+}
+#content-area .main-area .sub-menu ul li .fas {
+  font-size: 20px;
+}
+#content-area .main-area .sub-menu ul li span {
+  display: block;
+  margin: 15px 0 0 0;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+/* Post section | Right Column */
+#content-area .main-area .widget-box.post {
+  overflow: auto;
+}
+#content-area .main-area .widget-box.post .head {
+  margin: 0 0 15px 0;
+}
+#content-area .main-area .widget-box.post .head .user-img-container {
+  width: 10%;
+  display: inline-block;
+  overflow: auto;
+  float: left;
+}
+#content-area .main-area .widget-box.post .head .user-img {
+  display: inline-block;
+  float: left;
+}
+#content-area .main-area .widget-box.post .head .user-img img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin: 0;
+}
+#content-area .main-area .widget-box.post .head .post-info {
+  display: inline-block;
+  float: left;
+  width: 85%;
+}
+#content-area .main-area .widget-box.post .head::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#content-area .main-area .widget-box.post .head .post-info .user-info {
+  display: block;
+  font-size: 14px;
+  margin: 4px 0 6px 0;
+}
+#content-area .main-area .widget-box.post .head .post-info .post-date {
+  display: block;
+  font-size: 12px;
+  color: #ababab;
+}
+/* Post section with Comment and Image */
+#content-area .main-area .widget-box.post .body {
+  padding: 0;
+}
+#content-area .main-area .widget-box.post .body .post-img img {
+  width: 100%;
+}
+/* Top Icon Styling */
+#content-area .main-area .widget-box.post .body .top-icons {
+  width: 100%;
+  padding: 15px 0;
+}
+
+#content-area .main-area .widget-box.post .body .top-icons .fa-comment {
+  font-size: 20px;
+  color: #a8a8a8;
+}
+#content-area .main-area .widget-box.post .body .top-icons .fa-share-alt {
+  font-size: 20px;
+  color: #a8a8a8;
+}
+#content-area .main-area .widget-box.post .body .top-icons .fa-thumbs-up {
+  font-size: 20px;
+  margin-right: 15px;
+  color: #a8a8a8;
+}
+#content-area .main-area .widget-box.post .body .top-icons span {
+  float: right;
+  display: inline-block;
+}
+/* Top-Icon Styling stops here ~  */
+#content-area .main-area .widget-box.post .body .post-comments {
+  background: #e0e0e0;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 15px;
+}
+#content-area .main-area .widget-box.post .body .post-comments .user-img {
+  width: 10%;
+  display: inline-block;
+  /* overflow: auto; */
+  float: left;
+}
+#content-area .main-area .widget-box.post .body .post-comments::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#content-area .main-area .widget-box.post .body .post-comments .user-img img {
+  border-radius: 50%;
+  float: left;
+  width: 40px;
+  height: 40px;
+}
+#content-area .main-area .widget-box.post .body .post-comments .user-comment {
+  display: inline-block;
+  float: left;
+  width: 85%;
+  font-size: 14px;
+}
+#content-area
+  .main-area
+  .widget-box.post
+  .body
+  .post-comments
+  .user-comment
+  .user-info {
+  margin: 5px 0 10px 0;
+}
+#content-area
+  .main-area
+  .widget-box.post
+  .body
+  .post-comments
+  .user-comment
+  .user-info
+  .time {
+  color: #a8a8a8;
+  font-size: 10px;
+  float: right;
+}
+
+/* This is separate  */
+#content-area .main-area .widget-box.post .body .post-form {
+  padding: 15px 0 0;
+}
+#content-area .main-area .widget-box.post .body .post-form .user-img {
+  width: 10%;
+  display: inline-block;
+  /* overflow: auto; */
+  float: left;
+}
+#content-area .main-area .widget-box.post .body .post-form::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#content-area .main-area .widget-box.post .body .post-form .user-img img {
+  border-radius: 50%;
+  float: left;
+  width: 40px;
+  height: 40px;
+}
+#content-area .main-area .widget-box.post .body .post-form .form-info {
+  display: inline-block;
+  float: left;
+  width: 85%;
+  font-size: 14px;
+  padding: 10px 0;
+  border-bottom: 1px solid #ababab;
+}
+#content-area .main-area .widget-box.post .body .post-form .form-info input {
+  width: 80%;
+  border: transparent;
+  font-size: 18px;
+}
+#content-area
+  .main-area
+  .widget-box.post
+  .body
+  .post-form
+  .form-info
+  input:focus {
+  width: 80%;
+  border: transparent;
+  outline: none;
+  font-size: 18px;
+}
+#content-area .main-area .widget-box.post .body .post-form .form-info .icons {
+  display: inline-block;
+  float: right;
+}
+#content-area
+  .main-area
+  .widget-box.post
+  .body
+  .post-form
+  .form-info
+  .icons
+  .fas {
+  font-size: 20px;
+  margin: 0 15px 0 0;
+}
+
+/* Separation ends here */
+#content-area .main-area .widget-box.post .body .post-form img {
+  width: 100%;
+  border-radius: 50%;
+}
